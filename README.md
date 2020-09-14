@@ -12,3 +12,4 @@
 >6. MOMENT.JS
 
 [WEATHER-DASHBOARD](https://mcowley1.github.io/weather-dashboard/)
+![weather-dashboard](weather.png)

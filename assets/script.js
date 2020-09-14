@@ -74,22 +74,22 @@ var displayWeather = function(data, city, uvData) {
 
     var cityTemp = document.querySelector(".weather-data")
     var showConditions = document.createElement("h5")
-    showConditions.classList = "temp"
+    showConditions.classList = "temp text-primary"
     showConditions.innerHTML = "<h5> Temp: " + currentTemp + "&#8457</h5>";
 
 
     var showHumidity = document.createElement("h5")
-    showHumidity.classList = "humid"
+    showHumidity.classList = "humid text-primary"
     showHumidity.innerHTML = "<h5> Humidity: " + currentHumid + "% </h5>";
 
     var showWind = document.createElement("h5")
-    showWind.classList = "wind"
+    showWind.classList = "wind text-primary"
     showWind.innerHTML = "<h5> Wind Speed: " + currentWind + " MPH <h5>";
 
 
     var uvIndex = document.createElement("h5")
     currentUv.setAttribute = "#current-uv"
-    uvIndex.classList = "uv"
+    uvIndex.classList = "uv text-primary"
     uvIndex.innerHTML = "<h5> UV Index:  <span id=show-uv>" + currentUv + "</span>" + "</h5>"
 
     cityTemp.appendChild(cityLocation)
@@ -143,7 +143,6 @@ var cityHistory = function(showCity) {
     if (clickForCity != null) historyOne.onClick = clickCity
 }
 
-// this function is how the cities are able to be clicked on in the list to be viewed again
 var clickCity = function(city) {
 
     if (city) {
